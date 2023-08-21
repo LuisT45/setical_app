@@ -1,7 +1,7 @@
 import { Divider } from "@nextui-org/react";
 const Dashboard = ({ children }) => {
 	return (
-		<div className="dashboardContainer p-5 ">
+		<div className="dashboardContainer mt-unit-5xl pr-unit-2xl pl-unit-2xl 2xl:pr-unit-8xl 2xl:pl-unit-8xl ">
 			<section className="mt-24 dashboard ">
 				<h1 className="text-xl font-semibold">Dashboard</h1>
 

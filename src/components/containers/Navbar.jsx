@@ -2,9 +2,9 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link } from "@nextui-or
 
 const Nav = () => {
 	return (
-		<Navbar shouldHideOnScroll>
+		<Navbar shouldHideOnScroll className="justify-center">
 			<NavbarBrand className="font-bold text-inherit">Setical</NavbarBrand>
-			<NavbarContent className="flex gap-5" justify="center">
+			<NavbarContent className="flex gap-5" justify="end">
 				<NavbarItem isActive>
 					<Link aria-current="page" href="#">
 						Dashboard
