@@ -1,7 +1,11 @@
-const Layout = (children) => {
+import Nav from "../containers/Navbar";
+
+const Layout = ({ children }) => {
 	return (
 		<>
-			<header></header>
+			<header>
+				<Nav />
+			</header>
 			<main>{children}</main>
 			<footer></footer>
 		</>

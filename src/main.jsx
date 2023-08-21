@@ -9,7 +9,9 @@ import "./styles/index.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
 		<NextUIProvider>
-			<App />
+			<div id="container" className="w-screen h-screen dark text-foreground bg-background">
+				<App />
+			</div>
 		</NextUIProvider>
 	</React.StrictMode>
 );
