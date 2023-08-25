@@ -8,7 +8,7 @@ import {
 
 export const DataDisplay = () => {
   return (
-    <Card className="w-[240px] h-[240px]">
+    <Card className="w-[240px] h-[240px] ">
       <CardBody className="justify-center items-center p-5">
         <CircularProgress
           classNames={{
