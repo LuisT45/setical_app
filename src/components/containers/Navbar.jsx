@@ -8,7 +8,7 @@ import {
 
 const Nav = () => {
   return (
-    <Navbar shouldHideOnScroll className="justify-center">
+    <Navbar>
       <NavbarBrand className="font-bold text-2xl text-inherit">
         Setical
       </NavbarBrand>
