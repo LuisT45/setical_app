@@ -6,7 +6,7 @@ import {
   CircularProgress,
 } from "@nextui-org/react";
 
-export const DataDisplay = ({ title, variant }) => {
+export const DataDisplay = ({ title, variant, unit }) => {
   return (
     <Card className="w-[25em] h-[30em]  self-center justify-self-center ">
       <CardBody className="justify-center items-center">
@@ -17,6 +17,7 @@ export const DataDisplay = ({ title, variant }) => {
             track: "stroke-white/10",
             value: "text-4xl font-semibold text-white",
           }}
+          formatOptions={{ style: "unit", unit: unit }}
           color={variant}
           value={70}
           strokeWidth={4}
