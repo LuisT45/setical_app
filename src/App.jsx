@@ -8,10 +8,6 @@ function App() {
     <Layout>
       <Dashboard>
         <DataRow>
-          <DataDisplay title="Temperature" unit="celsius" variant="danger" />
-          <DataDisplay title="Humidity" unit="percent" variant="primary" />
-          <DataDisplay title="Soil Humidity" unit="percent" variant="warning" />
-          <DataDisplay title="Water Tank" unit="liter" variant="secondary" />
         </DataRow>
       </Dashboard>
     </Layout>

@@ -1,0 +1,33 @@
+[
+	{
+		"id": 0,
+		"name": "Temperature",
+		"unit": "celsius",
+		"value": 7,
+		"min": 0,
+		"max": 10
+	},
+	{
+		"id": 1,
+		"name": "Humidity",
+		"unit": "percent",
+		"value": 40,
+		"min": 20,
+		"max": 50
+	},
+	{
+		"id": 2,
+		"name": "Humidity Soil",
+		"unit": "percent",
+		"value": 35,
+		"min": 20,
+		"max": 50
+	},
+	{
+		"id": "3",
+		"name": "Water tank",
+		"unit": "liter",
+		"value": 30,
+		"min": 20
+	}
+]
