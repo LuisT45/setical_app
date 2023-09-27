@@ -10,8 +10,10 @@ import {
 } from '@nextui-org/react';
 import { useState } from 'react';
 
-const ParamModal = ({ id, title, variant, min, max }) => {
+const ParamModal = () => {
+	const { id, title, variant, min, max } = props
 	const { isOpen, onOpen, onOpenChange } = useDisclosure();
+	
 	const [error, setError] = useState();
 
 	const submitData = async (event) => {

@@ -7,8 +7,7 @@ function App() {
   return (
     <Layout>
       <Dashboard>
-        <DataRow>
-        </DataRow>
+        <DataRow />
       </Dashboard>
     </Layout>
   );

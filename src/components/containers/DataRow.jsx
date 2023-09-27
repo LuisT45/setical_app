@@ -13,7 +13,7 @@ const DataRow = () => {
 	console.log(info);
 
 	const dataCards = info.map((card) => {
-		return <DataDisplay key={card.id} id={card.id} title={card.name} unit={card.unit} value={card.value} min={card.min} max={card.max} />;
+		return <DataDisplay key={card.id} props={card} />;
 	});
 
 	return (

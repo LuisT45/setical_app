@@ -3,7 +3,8 @@ import ParamModal from './ParamModal';
 
 const variants = ['danger', 'warning', 'secondary', 'primary'];
 
-export const DataDisplay = ({ id, title, unit, value, min, max }) => {
+export const DataDisplay = (props) => {
+	const { id, title, unit, value, min, max } = props
 	return (
 		<Card className="w-[25em] h-[30em]  self-center justify-self-center ">
 			<CardBody className="justify-center items-center">
@@ -22,7 +23,7 @@ export const DataDisplay = ({ id, title, unit, value, min, max }) => {
 				/>
 			</CardBody>
 			<CardFooter className="w-[100%] justify-center">
-				<ParamModal id={id} title={title} variant={variants[id]} min={min} max={max} />
+				<ParamModal props={props} />
 			</CardFooter>
 		</Card>
 	);
