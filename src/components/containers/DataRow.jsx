@@ -17,7 +17,13 @@ const DataRow = () => {
 	});
 
 	return (
-		<div className="grid place-content-center p-12 gap-10 md:grid-cols-[repeat(2,_auto)]">{dataCards}</div>
+		<>
+			{info && (
+				<div className="grid place-content-center p-12 gap-10 md:grid-cols-[repeat(2,_auto)">
+					{dataCards}
+				</div>
+			)}
+		</>
 	);
 };
 

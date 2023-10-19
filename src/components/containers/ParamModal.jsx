@@ -10,16 +10,15 @@ import {
 } from '@nextui-org/react';
 import { useState } from 'react';
 
-const ParamModal = () => {
-	const { id, title, variant, min, max } = props
+const ParamModal = ({ props }) => {
+	const { id, name, variant, min, max } = props;
 	const { isOpen, onOpen, onOpenChange } = useDisclosure();
-	
+
 	const [error, setError] = useState();
 
 	const submitData = async (event) => {
 		const minInput = document.querySelector('#min').value;
 		const maxInput = document.querySelector('#max').value;
-		console.log(minInput, maxInput);
 
 		const bodyValues = {
 			min: min !== '' ? minInput : min,
@@ -60,7 +59,7 @@ const ParamModal = () => {
 				<ModalContent>
 					{(onClose) => (
 						<>
-							<ModalHeader className="flex flex-col gap-1">{title}</ModalHeader>
+							<ModalHeader className="flex flex-col gap-1">{name}</ModalHeader>
 							<ModalBody>
 								<div className="flex gap-3">
 									<Button disabled>{`Min: ${min}`}</Button>
@@ -70,8 +69,7 @@ const ParamModal = () => {
 									<div
 										id="errorDisplay"
 										className={
-											error &&
-											' bg-red-400 text-red-800 p-3 rounded-md max-w-full box-border'
+											error && ' bg-red-400 text-red-800 p-3 rounded-md max-w-full box-border'
 										}
 									>
 										{error}
@@ -80,15 +78,15 @@ const ParamModal = () => {
 								<Input
 									autoFocus
 									label="Min"
-									placeholder={`Min ${title}`}
+									placeholder={`Min ${name}`}
 									id="min"
 									type="number"
 									variant="bordered"
 								/>
-								{title != 'Water tank' && (
+								{name != 'Water tank' && (
 									<Input
 										label="Max"
-										placeholder={`Max ${title}`}
+										placeholder={`Max ${name}`}
 										id="max"
 										type="number"
 										variant="bordered"

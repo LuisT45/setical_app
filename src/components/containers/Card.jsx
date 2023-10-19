@@ -3,12 +3,14 @@ import ParamModal from './ParamModal';
 
 const variants = ['danger', 'warning', 'secondary', 'primary'];
 
-export const DataDisplay = (props) => {
-	const { id, title, unit, value, min, max } = props
+export const DataDisplay = ({ props }) => {
+	const { id, name, unit, value, min, max } = props;
+	const simValue = Math.floor(Math.random() * (Number(max) - Number(min)) + Number(min));
+	console.log({ min, max, simValue });
 	return (
 		<Card className="w-[25em] h-[30em]  self-center justify-self-center ">
 			<CardBody className="justify-center items-center">
-				<h3 className="font-semibold text-3xl mb-7"> {title} </h3>
+				<h3 className="font-semibold text-3xl mb-7"> {name} </h3>
 				<CircularProgress
 					classNames={{
 						svg: 'w-[15em] h-[15em] drop-shadow-md',
@@ -17,7 +19,7 @@ export const DataDisplay = (props) => {
 					}}
 					formatOptions={{ style: 'unit', unit: unit }}
 					color={variants[id]}
-					value={value}
+					value={simValue}
 					strokeWidth={4}
 					showValueLabel={true}
 				/>
