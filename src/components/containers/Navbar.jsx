@@ -8,23 +8,11 @@ import {
 
 const Nav = () => {
   return (
-    <Navbar>
-      <NavbarBrand className="font-bold text-2xl text-inherit">
+    <nav className="flex">
+      <div className="font-bold text-2xl text-inherit ml-auto mr-auto mt-4 text-5xl tracking-wider">
         Setical
-      </NavbarBrand>
-      <NavbarContent className="flex gap-5" justify="end">
-        <NavbarItem isActive>
-          <Link aria-current="page" href="#">
-            Dashboard
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Setting
-          </Link>
-        </NavbarItem>
-      </NavbarContent>
-    </Navbar>
+      </div>
+    </nav>
   );
 };
 
